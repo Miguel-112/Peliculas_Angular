@@ -1,1 +1,44 @@
-<p>login works!</p>
+<section class="d-flex alingn-item-center justify-content-center">
+     
+    <form [formGroup]="formLogin">
+        <div class="row mt-4 text-center">
+            <div class="col-12">
+                <img src="{{logo}}" alt="logo" class="logo" >
+                <div class="col-12 card " style="width: 18rem; margin-right: 10;">
+    
+                    <h5 class="card-title">Iniciar sesion</h5>
+        
+                    <div class="card-body">
+                        <div class=" ">
+                    
+                            <input type="email" class="form-control" formControlName="username" id="floatingInput" placeholder="name@example.com"  autocomplete="additional-name">
+                            <label for="floatingInput">Email address</label>
+                
+                        </div>
+                
+                        <div class=" mt-2 ">
+                
+                            <input type="password" class="form-control" formControlName="password" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                
+                        </div>
+                
+                        <div class=" mt-2 d-grid gap-2">
+                        
+                
+                            <button class="btn btn-primary" type="button" (click)="login()">Iniciar secion</button>
+                            
+                        </div>
+                     
+                    </div>
+                  </div>
+         
+            </div>
+    
+    
+           
+        </div>
+
+    </form>
+    
+</section>
